@@ -3,6 +3,26 @@
 apt-get update 
 apt-get upgrade -y
 apt install git -y 
+apt-get install aircrack-ng -y
+apt-get install libssl-dev -y
+apt-get install ocl-icd-libopencl1 -y
+apt-get install build-essential -y
+apt-get install wireshark -y
+apt install reaver -y
+cd
+git clone https://github.com/hashcat/hashcat
+cd hashcat
+git submodule update –init
+git clone https://github.com/hashcat/hashcat-utils
+cd hashcat-utils/src
+make
+cd
+wget https://github.com/aanarchyy/bully/archive/master.zip && unzip master.zip
+cd bully*/
+cd src/
+make
+make install 
+cd
 dpkg --configure -a
 git clone https://github.com/derv82/wifite2.git
 cd wifite2
