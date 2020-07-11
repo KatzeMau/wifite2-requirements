@@ -9,6 +9,20 @@ apt-get install ocl-icd-libopencl1 -y
 apt-get install build-essential -y
 apt-get install wireshark -y
 apt install reaver -y
+apt-get -y install build-essential libpcap-dev aircrack-ng pixiewps
+apt-get -y install wireshark
+apt-get -y install libssl-dev
+cd 
+git clone https://github.com/aanarchyy/bully
+cd bully*/
+cd src/
+make
+make install 
+cd
+wget http://download.aircrack-ng.org/aircrack-ng-1.2-beta1.tar.gz tar -zxvf aircrack-ng-1.2-beta1.tar.gz 
+cd aircrack-ng-1.2-beta1 
+make
+make install
 cd
 git clone https://github.com/hashcat/hashcat
 cd hashcat
