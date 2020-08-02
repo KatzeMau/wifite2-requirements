@@ -1,8 +1,9 @@
 #!/bin/bash
 
-#CHECK ROOT !!!!
+
+# Check if root
 if [ "$(whoami)" != "root" ]; then
-  whiptail --msgbox "Sorry you are not root. You must type: sudo su or sudo root" $WT_HEIGHT $WT_WIDTH
+  whiptail --msgbox "Sorry you are not root. You must type: sudo sh install.sh" $WT_HEIGHT $WT_WIDTH
   exit
 fi
 
