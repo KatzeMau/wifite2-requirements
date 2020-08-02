@@ -1,5 +1,11 @@
 #!/bin/bash
 
+#CHECK ROOT !!!!
+if [ "$(whoami)" != "root" ]; then
+  whiptail --msgbox "Sorry you are not root. You must type: sudo su or sudo root" $WT_HEIGHT $WT_WIDTH
+  exit
+fi
+
 #int the script, like update and upgrade
 apt-get update 
 apt-get upgrade -y
