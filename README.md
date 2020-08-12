@@ -8,9 +8,9 @@ You can install The Mod or the Normal Wifite2, I prefer the normal version
 
 If you use an alfa card install the driver:
 
-wget https://http.kali.org/kali/pool/contrib/r/realtek-rtl88xxau-dkms/realtek-rtl88xxau-dkms_5.6.4.2~20200529-0kali1_all.deb
-sudo apt update
-sudo apt install ./realtek-rtl88xxau-dkms_5.6.4.2~20200529-0kali1_all.deb
+Run as root !
+
+wget https://http.kali.org/kali/pool/contrib/r/realtek-rtl88xxau-dkms/realtek-rtl88xxau-dkms_5.6.4.2~20200529-0kali1_all.deb && apt update && apt install ./realtek-rtl88xxau-dkms_5.6.4.2~20200529-0kali1_all.deb
 
 
 If you like it, pls donate some BTC 
