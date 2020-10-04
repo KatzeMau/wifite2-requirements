@@ -1,39 +1,24 @@
 #!/bin/bash
 
 
-#Currently broke shit, if you know how to fix make a pull request
-#Colors
-#cyan='\e[0;36m'
-#lightcyan='\e[96m'
-#green='\e[0;32m'
-#lightgreen='\e[1;32m'
-#white='\e[1;37m'
-#red='\e[1;31m'
-#yellow='\e[1;33m'
-#blue='\e[1;34m'
-#echo ""
-#sleep 2
+# NEW CODE #
+# to skip any questions from APT
+export DEBIAN_FRONTEND=noninteractive
 
-#CHECK ROOT !!!!
-#Currently broke shit, if you know how to fix make a pull request
+AUTO_SIGNUP=0
 
-#[[ `id -u` -eq 0 ]] > /dev/null 2>&1 || { echo -e $red "type sudo su and run again, or put sudo at the beginning of the command."; echo ; exit 1; }
-# check internet 
-#function checkinternet {
-#  ping -c 1 google.com > /dev/null
-#  if [[ "$?" != 0 ]]
-#  then
-#    echo  "Checking Internet ...: Could Not Connect
-#     This Program Needs an Active Internet"
-#    echo "Exiting Now"
-#    echo && sleep 2
-#    kexit
-#  else
-#    echo "Checking the Internet conection: CONNECTED"
-#  fi
-#}
-#checkinternet
-#sleep 2
+while getopts "a" opt; do
+	case $opt in
+	a)
+	    AUTO_SIGNUP=1
+	    ;;
+	esac
+done
+
+if [ "$(id -u)" != "0" ]; then
+   echo "This script must be run as root" 1>&2
+   exit 1
+fi
 
 #int the script, like update and upgrade
 apt-get update 
@@ -117,7 +102,8 @@ apt-get install wireless-tools -y
 apt-get install macchanger -y
 apt-get install wireshark -y
 sleep 2
-echo "THANKS FOR USING MY SCRIPT,DONATE SOME BTC TO SUPPORT ME :D (BTC 3CQFyuKYzsarYZcYxMfsJBmzNGcuRQURSu)"
+echo "THANKS FOR USING MY SCRIPT,DONATE SOME BTC TO SUPPORT ME :D (BTC: 3CQFyuKYzsarYZcYxMfsJBmzNGcuRQURSu)"
+echo "Installation and configuration completed!"
 
 #THANKS FOR USING MY SCRIPT, 
 #PLS STAR AND DONATE SOME BTC TO SUPPORT ME :D 
