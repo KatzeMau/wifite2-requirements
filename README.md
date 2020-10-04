@@ -1,17 +1,28 @@
-# Wifite2-and-its-tools
- This bash script will install wifite2 and its other tools Pyrit, bully, wireshark, hcxtools, hcxdumptool, macchanger
-##Yesssss :) Were now 2.0 (I will make a better readme)
+# wifite2-and-its-tools
+ This bash script will install wifite2 and its other tools Pyrit, bully, wireshark, hcxtools, hcxdumptool, macchanger and mutch more.... :=)
 
-# You can install the Normal Wifite2 or The Wifite2Mod
-This little script will help you to get startet very fast :)
-You can install The Mod or the Normal Wifite2, I prefer the normal version
+### Before you using wifite2, please remember that with great power comes great responsibility. 
+
+#How to install the script?
+check if youre superuser (sudo su)
+Then Type:
+sh wifite2.2-install.sh
+This will install wifite2 and its requirements
+
+
+
+If you like it, pls donate some BTC:
+3CQFyuKYzsarYZcYxMfsJBmzNGcuRQURSu
+
 
 If you use an alfa card install the driver:
 
-Run as root !
+wget https://http.kali.org/kali/pool/contrib/r/realtek-rtl88xxau-dkms/realtek-rtl88xxau-dkms_5.6.4.2~20200529-0kali1_all.deb
+sudo apt update
+sudo apt install ./realtek-rtl88xxau-dkms_5.6.4.2~20200529-0kali1_all.deb
 
-wget https://http.kali.org/kali/pool/contrib/r/realtek-rtl88xxau-dkms/realtek-rtl88xxau-dkms_5.6.4.2~20200529-0kali1_all.deb && apt update && apt install ./realtek-rtl88xxau-dkms_5.6.4.2~20200529-0kali1_all.deb
 
-
-If you like it, pls donate some BTC 
-3CQFyuKYzsarYZcYxMfsJBmzNGcuRQURSu
+Note:
+I removed the mod version, because its stupid 
+if you really want to install it look at the archive and then ver.1
+then install the mod from there!!
