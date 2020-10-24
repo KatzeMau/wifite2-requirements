@@ -3,7 +3,7 @@
 
 ### Before you using wifite2, please remember that with great power comes great responsibility. 
 
-#How to install the script?
+# How to install the script?
 check if youre superuser (sudo su)
 Then Type:
 sh wifite2.2-install.sh
@@ -15,11 +15,12 @@ If you like it, pls donate some BTC:
 3CQFyuKYzsarYZcYxMfsJBmzNGcuRQURSu
 
 
+Just Install the driver if it does not work !!
 If you use an alfa card install the driver:
+(run as root!)
 
-wget https://http.kali.org/kali/pool/contrib/r/realtek-rtl88xxau-dkms/realtek-rtl88xxau-dkms_5.6.4.2~20200529-0kali1_all.deb
-sudo apt update
-sudo apt install ./realtek-rtl88xxau-dkms_5.6.4.2~20200529-0kali1_all.deb
+wget https://http.kali.org/kali/pool/contrib/r/realtek-rtl88xxau-dkms/realtek-rtl88xxau-dkms_5.6.4.2~20200529-0kali1_all.deb && apt update && apt install ./realtek-rtl88xxau-dkms_5.6.4.2~20200529-0kali1_all.deb
+
 
 
 Note:
