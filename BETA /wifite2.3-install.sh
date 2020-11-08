@@ -20,6 +20,20 @@ if [ "$(id -u)" != "0" ]; then
    exit 1
 fi
 
+##Unstable
+
+wget -q --spider http://alive.thecatcloud.de
+
+if [ $? -eq 0 ]; then
+    echo "Online"
+else
+    echo "Offline"
+fi
+
+##End Of unstable 
+
+
+
 #int the script, like update and upgrade
 apt-get update 
 apt-get upgrade -y
@@ -125,6 +139,10 @@ git clone https://github.com/hashcat/hashcat-utils
 cd hashcat-utils/src
 make
 cd
+
+#Update and Upgrade again, because jeah dont want to write a reason (its just because)
+apt-get update 
+apt-get upgrade -y
 
 #Last things because they need youre preference like yes or no 
 apt-get install wireshark -y
