@@ -19,7 +19,7 @@ Just Install the driver if it does not work !!
 If you use an alfa card install the driver:
 (run as root!)
 
-wget https://http.kali.org/kali/pool/contrib/r/realtek-rtl88xxau-dkms/realtek-rtl88xxau-dkms_5.6.4.2~20200529-0kali1_all.deb && apt update && apt install ./realtek-rtl88xxau-dkms_5.6.4.2~20200529-0kali1_all.deb
+wget https://http.kali.org/kali/pool/contrib/r/realtek-rtl88xxau-dkms/realtek-rtl88xxau-dkms_5.6.4.2~git20210327.c0ce817-0kali1_all.deb && apt update && apt install ./realtek-rtl88xxau-dkms_5.6.4.2~20200529-0kali1_all.deb
 
 
 
