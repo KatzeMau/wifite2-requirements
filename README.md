@@ -12,7 +12,7 @@ This will install wifite2 and its requirements
 
 
 If you like it, pls donate some BTC:
-3CQFyuKYzsarYZcYxMfsJBmzNGcuRQURSu
+16e9QmCEFbSm7fdJE8qHA8tuGyBSD8goBt
 
 
 Just Install the driver if it does not work !!
