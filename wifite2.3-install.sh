@@ -155,11 +155,11 @@ sleep 2
 #Nice GUI "Thanks for using Wifite2Requirements" 
 figlet Thanks for using Wifite2Requirements
 
-echo "THANKS FOR USING MY SCRIPT,DONATE SOME BTC TO SUPPORT ME :D (BTC: 16e9QmCEFbSm7fdJE8qHA8tuGyBSD8goBt)"
+echo "THANKS FOR USING MY SCRIPT,DONATE SOME MONERO TO SUPPORT ME :D (XMR: 8AJDupsYLeWbpDdiKuPJxKWE1osTn54Fp72uXRjth51r2Eqasq7MrkNhHPmwDYWospQRipDYeHkDqJ9fRfEehFpY4oijZKb)"
 echo "Installation and configuration completed!"
 
 #THANKS FOR USING MY SCRIPT, 
 #PLS STAR AND DONATE SOME BTC TO SUPPORT ME :D 
-#BTC 16e9QmCEFbSm7fdJE8qHA8tuGyBSD8goBt
+#XMR: 8AJDupsYLeWbpDdiKuPJxKWE1osTn54Fp72uXRjth51r2Eqasq7MrkNhHPmwDYWospQRipDYeHkDqJ9fRfEehFpY4oijZKb
 
 exit
