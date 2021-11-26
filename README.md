@@ -11,8 +11,8 @@ This will install wifite2 and its requirements
 
 
 
-If you like it, pls donate some BTC:
-16e9QmCEFbSm7fdJE8qHA8tuGyBSD8goBt
+If you like it, pls donate some Monero (XMR):
+8AJDupsYLeWbpDdiKuPJxKWE1osTn54Fp72uXRjth51r2Eqasq7MrkNhHPmwDYWospQRipDYeHkDqJ9fRfEehFpY4oijZKb
 
 
 Just Install the driver if it does not work !!
