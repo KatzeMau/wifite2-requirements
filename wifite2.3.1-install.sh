@@ -33,7 +33,7 @@ fi
 
 #int the script, like update and upgrade
 apt-get update 
-apt-get upgrade -y
+apt-get dist-upgrade -y
 
 #Install all things that can be installed by apt
 apt install git -y 
@@ -53,7 +53,8 @@ apt-get install bully -y
 apt-get install python -y
 apt-get install python3-dev -y
 apt-get install python2-dev -y
-
+apt-get install cmake libglib2.0-dev libgcrypt20-dev flex yacc bison byacc -y
+apt-get install libpcap-dev qtbase5-dev libssh-dev libsystemd-dev qtmultimedia5-dev libqt5svg5-dev qttools5-dev -y
 #random dpkg just because.... jeah just because :)
 dpkg --configure -a
 
@@ -62,6 +63,7 @@ cd
 git clone https://github.com/aanarchyy/bully
 wget http://download.aircrack-ng.org/aircrack-ng-1.2-beta1.tar.gz tar -zxvf aircrack-ng-1.2-beta1.tar.gz 
 wget https://github.com/aanarchyy/bully/archive/master.zip && unzip master.zip
+wget http://archive.ubuntu.com/ubuntu/pool/universe/h/hcxtools/hcxtools_6.0.2-1_amd64.deb
 git clone https://github.com/KatzeMau/wifite2
 git clone https://github.com/ZerBea/hcxdumptool
 git clone https://github.com/ZerBea/hcxtools
@@ -71,6 +73,7 @@ git clone https://github.com/ZerBea/hcxtools.git
 
 #Install what we downloaded
 cd
+apt-get install ./hcxtools_6.0.2-1_amd64.deb
 cd bully*/
 cd src/
 make
@@ -107,10 +110,6 @@ cd
 #Pyrit
 cd
 wget https://github.com/JPaulMora/Pyrit/releases/download/v0.5.0/Pyrit-v0.5.0.zip
-apt install cmake libglib2.0-dev libgcrypt20-dev flex yacc bison byacc \
-  libpcap-dev qtbase5-dev libssh-dev libsystemd-dev qtmultimedia5-dev \
-  libqt5svg5-dev qttools5-dev
-
 unzip Pyrit-vX.zip
 cd Pyrit-X
 pip install psycopg2
@@ -138,11 +137,10 @@ cd hashcat-utils/src
 make
 cd
 
-#Update and Upgrade again, because jeah dont want to write a reason (its just because)
 apt-get update 
 apt-get upgrade -y
 
-#Last things because they need youre preference like yes or no 
+#Last things because they need youre preferences (REMOVE LINE IF UNWANTED)
 apt-get install wireshark -y
 apt-get install wireless-tools -y
 apt-get install macchanger -y
