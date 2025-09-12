@@ -1,1 +1,0 @@
-This stuff in here is really buggy pls use the newest versions 
